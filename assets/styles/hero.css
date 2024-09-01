@@ -1,9 +1,11 @@
 .hero {
   padding-top: 5rem;
-  margin-bottom: 5rem;
+  padding-bottom: 4rem;
   padding-inline: 1rem;
   background-color: var(--color-white);
+  width: var(--max-width);
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .hero__container {
@@ -13,8 +15,8 @@
   justify-content: space-evenly; 
   gap: 2rem; 
   background-color: var(--color-white-accent);
-  border-radius: 2rem;
-  padding: 0 2rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
 }
 
 .hero__content {
@@ -73,6 +75,7 @@
   padding: 1rem 2rem;
   margin-top: 1rem;
   font-size: var(--font-size-sm);
+  font-weight: 600;
 }
 
 .hero__image {
