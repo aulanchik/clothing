@@ -44,18 +44,3 @@
 .nav__links a:hover {
     color: var(--color-orange);
 }
-
-.nav__button {
-    background-color: var(--color-black);
-    color: var(--color-white);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.nav__button:hover {
-    background-color: var(--color-orange);
-    transition: var(--transition-time);
-    color: var(--color-black);
-}
