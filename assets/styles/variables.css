@@ -18,5 +18,6 @@
     --primary-font: 'Poppins', sans-serif;
 
     --transition-time: 0.3s;
+    --max-card-width: 400px;
     --max-width: 1200px;
 }
