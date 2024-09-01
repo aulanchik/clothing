@@ -1,0 +1,75 @@
+.sale {
+    background-color: var(--color-orange);
+}
+
+.sale__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.sale__image img {
+    height: 100%;
+    filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+    -webkit-filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+    -moz-filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+    -o-filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+}
+
+.sale__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.sale__content h2 {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 5.75rem;
+}
+
+.sale__content h2 span {
+    position: relative;
+    isolation: isolate;
+}
+
+.sale__content h2 span::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -1rem;
+    height: calc(100% - 10px);
+    width: calc(100% + 4rem);
+    background-color: var(--color-white);
+    transform: rotate(-2deg);
+    z-index: -1;
+}
+
+.sale__content p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.sale__content h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.sale__btn button {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: var(--font-size-md);
+}
+
+.sale__btn button:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
