@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   const signUpBtn = document.createElement('li');
-  signUpBtn.innerHTML = '<button class="nav__button">SIGN UP</button>';
+  signUpBtn.innerHTML = '<button>Sign Up</button>';
 
   navHeader.appendChild(logo);
   navLinks.appendChild(signUpBtn);
