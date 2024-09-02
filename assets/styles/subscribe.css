@@ -1,0 +1,44 @@
+.subscribe {
+  background-color: var(--color-orange);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.subscribe__container,
+.subscribe__container p {
+  max-width: 800px;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+  color: inherit;
+}
+
+.subscribe__container h2 {
+    color: var(--color-white);
+}
+
+.subscribe__container p {
+  margin-bottom: 2rem;
+  font-size: var(--font-size-md);
+}
+
+.subscribe__container form {
+  width: 100%;
+  max-width: var(--max-card-width);
+  margin: 0 auto;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: 5px;
+}
+
+.subscribe__container input {
+  width: 100%;
+  padding: 0 1rem;
+  border: none;
+  outline: none;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  border-radius: 6px;
+}

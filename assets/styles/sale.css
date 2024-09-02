@@ -1,5 +1,6 @@
 .sale {
     background-color: var(--color-orange);
+    overflow: hidden;
 }
 
 .sale__container {
