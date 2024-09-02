@@ -14,8 +14,9 @@
 
 <body>
     <nav id="main-nav"></nav>
-    <div class="hero">
-        <section class="section__container hero__container">
+
+    <section class="hero">
+        <div class="section__container hero__container">
             <div class="hero__content">
                 <h1>
                     <span>LET'S</span>
@@ -34,46 +35,48 @@
             <div class="hero__image">
                 <img src="assets/images/header.png" alt="header" />
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <section class="section__container arrival__container" id="catalogue">
-        <h2 class="section__header">NEW ARRIVALS</h2>
-        <div class="arrival__grid">
-            <div class="arrival__card">
-                <div class="arrival__image">
-                    <img src="assets/images/arrival-1.jpg" alt="arrival" />
-                </div>
-                <div class="arrival__content">
-                    <div>
-                        <h4>Hoodies & Sweatshirts</h4>
-                        <a href="#">Explore Now</a>
+    <section class="arrivals" id="catalogue">
+        <div class="section__container arrival__container">
+            <h2 class="section__header">NEW ARRIVALS</h2>
+            <div class="arrival__grid">
+                <div class="arrival__card">
+                    <div class="arrival__image">
+                        <img src="assets/images/arrival-1.jpg" alt="arrival" />
                     </div>
-                    <span><i class="ri-arrow-right-line"></i></span>
-                </div>
-            </div>
-            <div class="arrival__card">
-                <div class="arrival__image">
-                    <img src="assets/images/arrival-2.jpg" alt="arrival" />
-                </div>
-                <div class="arrival__content">
-                    <div>
-                        <h4>Coats & Jackets</h4>
-                        <a href="#">Explore Now</a>
+                    <div class="arrival__content">
+                        <div>
+                            <h4>Hoodies & Sweatshirts</h4>
+                            <a href="#">Explore Now</a>
+                        </div>
+                        <span><i class="ri-arrow-right-line"></i></span>
                     </div>
-                    <span><i class="ri-arrow-right-line"></i></span>
                 </div>
-            </div>
-            <div class="arrival__card">
-                <div class="arrival__image">
-                    <img src="assets/images/arrival-3.jpg" alt="arrival" />
-                </div>
-                <div class="arrival__content">
-                    <div>
-                        <h4>Tees & T-Shirt</h4>
-                        <a href="#">Explore Now</a>
+                <div class="arrival__card">
+                    <div class="arrival__image">
+                        <img src="assets/images/arrival-2.jpg" alt="arrival" />
                     </div>
-                    <span><i class="ri-arrow-right-line"></i></span>
+                    <div class="arrival__content">
+                        <div>
+                            <h4>Coats & Jackets</h4>
+                            <a href="#">Explore Now</a>
+                        </div>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+                <div class="arrival__card">
+                    <div class="arrival__image">
+                        <img src="assets/images/arrival-3.jpg" alt="arrival" />
+                    </div>
+                    <div class="arrival__content">
+                        <div>
+                            <h4>Tees & T-Shirt</h4>
+                            <a href="#">Explore Now</a>
+                        </div>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,6 +98,19 @@
                     <button class="btn">Shop Now</button>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="section__container subscribe__container">
+            <h2 class="section__header">
+                Join Our Shopping Community
+            </h2>
+            <p>Enter your email below to stay updated and join wild generation.</p>
+            <form action="/" method="post">
+                <input type="email" placeholder="Add your email here" aria-label="Email address" required />
+                <button type="submit" class="btn">Send</button>
+            </form>
         </div>
     </section>
 
