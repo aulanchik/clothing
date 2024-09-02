@@ -1,0 +1,35 @@
+.lifestyle__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.lifestyle__image img {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.lifestyle__content .section__header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.lifestyle__content p {
+  font-size: var(--font-size-md);
+  color: var(--color-gray);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.lifestyle__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.lifestyle__links img {
+  width: 125px;
+  height: 40px;
+}

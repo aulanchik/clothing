@@ -20,8 +20,8 @@ body {
 
 .section__container {
     max-width: var(--max-width);
-    padding: 5rem 1rem;
-    margin: auto;
+    padding: 3rem 1rem;
+    margin: 0 auto;
 }
 
 .section__header {
