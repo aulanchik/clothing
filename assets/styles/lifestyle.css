@@ -12,20 +12,22 @@
 
 .lifestyle__content .section__header {
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
+  width: 450px;
 }
 
 .lifestyle__content p {
   font-size: var(--font-size-md);
   color: var(--color-gray);
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
+  width: 380px;
 }
 
 .lifestyle__links {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
 }
 
