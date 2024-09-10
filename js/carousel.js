@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const carousel = document.getElementById('carousel');
     carousel.classList.add('carousel');
+    carousel.classList.add('slide-in-bottom');
 
     const carouselContainer = document.createElement('div');
     carouselContainer.classList.add('carousel__container');
