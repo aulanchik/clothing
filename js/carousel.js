@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {    
-
+document.addEventListener("DOMContentLoaded", function() {
     const brands = [
         {src: "assets/images/banner-1.png"},
         {src: "assets/images/banner-2.png"},
@@ -12,38 +11,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const carousel = document.getElementById('carousel');
     carousel.classList.add('carousel');
-    carousel.classList.add('slide-in-bottom');
 
     const carouselContainer = document.createElement('div');
     carouselContainer.classList.add('carousel__container');
 
-    brands.forEach((item, index) => {
-        const brand = document.createElement('img');
-        brand.src = item.src;
-        brand.alt = `Brand ${index + 1}`;
-        carouselContainer.appendChild(brand);
-    });
+    const fragment = document.createDocumentFragment();
 
     brands.forEach((item, index) => {
-        const clonedBrand = document.createElement('img');
-        clonedBrand.src = item.src;
-        clonedBrand.alt = `Brand (${index + 1} clone)`;
-        carouselContainer.appendChild(clonedBrand);
+        const img = document.createElement('img');
+        img.src = item.src;
+        img.alt = `Brand ${index + 1}`;
+        fragment.appendChild(img);
     });
 
-    let scrollPosition = 0;
-    const itemWidth = carouselContainer.querySelector('img').clientWidth;
-
-    function scrollCarousel() {
-        scrollPosition += 1;
-        if (scrollPosition >= itemWidth * brands.length) {
-                scrollPosition = 0;
-        }
-        carouselContainer.style.transform = `translateX(-${scrollPosition}px)`;
-        requestAnimationFrame(scrollCarousel);
-    }        
-    scrollCarousel();
+    carouselContainer.appendChild(fragment.cloneNode(true));
+    carouselContainer.appendChild(fragment);
 
     carousel.appendChild(carouselContainer);
-
 });

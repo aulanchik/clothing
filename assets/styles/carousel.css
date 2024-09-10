@@ -8,10 +8,10 @@
 
 .carousel__container {
     display: flex;
-    animation: scroll 20s linear infinite;
+    gap: 4rem;
     white-space: nowrap; 
-    width: 200%;
-    gap: 2rem;
+    width: calc(100% * 3);
+    animation: scroll 20s linear infinite;
 }
 
 .carousel__container img {
