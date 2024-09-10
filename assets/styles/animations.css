@@ -58,6 +58,16 @@
   }
 }
 
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
 .slide-in-top {
   opacity: 0;
   animation: slideInTop 1s ease-out forwards;
