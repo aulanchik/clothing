@@ -12,9 +12,6 @@
 
 html, body {
     scroll-behavior: smooth;
-}
-
-body {
     font-family: var(--primary-font);
 }
 
