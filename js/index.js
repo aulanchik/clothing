@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
   const nav = document.getElementById('main-nav');
   nav.classList.add('nav');
-  
+
+  const container = document.createElement('div');
+  container.classList.add('nav__container');
+
   const navHeader = document.createElement('div');
   navHeader.classList.add('nav__header');
 
@@ -21,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
   ];
 
   menuItems.forEach(item => {
-    const li = document.createElement('li', 'nav__link');
+    const li = document.createElement('li');
+    li.classList.add('nav__link');
     const a = document.createElement('a');
     a.href = item.href;
     a.textContent = item.text;
@@ -31,9 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const signUpBtn = document.createElement('li');
   signUpBtn.innerHTML = '<button>Sign Up</button>';
+  navLinks.appendChild(signUpBtn);
 
   navHeader.appendChild(logo);
-  navLinks.appendChild(signUpBtn);
-  nav.appendChild(navHeader);
-  nav.appendChild(navLinks);
+  container.appendChild(navHeader);
+  container.appendChild(navLinks);
+
+  nav.appendChild(container);
 });

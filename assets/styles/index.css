@@ -1,11 +1,13 @@
 @import url('variables.css');
 @import url('base.css');
+@import url('animations.css');
 @import url('navbar.css');
 @import url('footer.css');
+@import url('carousel.css');
 
 @import url('hero.css');
-@import url('arrivals.css');
 @import url('sale.css');
+@import url('arrivals.css');
 @import url('subscribe.css');
 @import url('lifestyle.css');
 @import url('favourite.css');

@@ -12,15 +12,12 @@
 
 html, body {
     scroll-behavior: smooth;
-}
-
-body {
     font-family: var(--primary-font);
 }
 
 .section__container {
     max-width: var(--max-width);
-    padding: 3rem 1rem;
+    padding: 4rem 2rem;
     margin: 0 auto;
 }
 

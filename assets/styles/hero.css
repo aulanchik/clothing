@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
   padding-inline: 1rem;
   background-color: var(--color-white);
@@ -9,14 +9,13 @@
 }
 
 .hero__container {
-  max-width: var(--max-width);
   display: flex; 
   align-items: center; 
   justify-content: space-evenly; 
-  gap: 2rem; 
   background-color: var(--color-white-accent);
   border-radius: 1rem;
   padding: 0 1rem;
+  gap: 2rem; 
 }
 
 .hero__content {
